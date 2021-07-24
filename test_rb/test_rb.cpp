@@ -65,7 +65,7 @@ using std::vector;
 		if ((buffer[index++] & 0x80) == 0) { return value; }
 
 		value += ((uint64_t)(buffer[index] & 0x7F) << 63);
-		while ((buffer[index++] & 0x80) != 0) {}
+		if ((buffer[index++] & 0x80) != 0) {}
 		return value;
 	}
 

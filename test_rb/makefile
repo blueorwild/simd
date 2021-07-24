@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS= -O2 #-g
+CFLAGS= -O1 #-g
 TARGET=test_rb1 test_rb2 test_rb3
 
 default: $(TARGET)
